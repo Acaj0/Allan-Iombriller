@@ -1,8 +1,8 @@
 import type React from "react"
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Montserrat } from "next/font/google"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Montserrat({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Dr. Allan Iombriller | Implantes e Estética Dental e Facial",
