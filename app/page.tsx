@@ -15,7 +15,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=100&width=100')] bg-repeat opacity-10"></div>
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 overflow-clip">
         <Header />
         <HeroSection />
         <ServicesSection />

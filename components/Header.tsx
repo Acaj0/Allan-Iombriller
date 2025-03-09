@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
@@ -62,7 +63,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Button className="bg-gold text-black hover:bg-gold/80">Agendar Consulta</Button>
+              <Button className="bg-gold text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button>
             </li>
           </ul>
         </nav>

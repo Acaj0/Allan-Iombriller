@@ -1,5 +1,5 @@
 "use client"
-
+import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
@@ -42,10 +42,10 @@ export default function HeroSection() {
             tecnologia de ponta para resultados excepcionais.
           </p>
           <div className="flex flex-col justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-            <Button className="bg-gold text-lg text-black hover:bg-gold/80">Agendar Consulta</Button>
-            <Button variant="outline" className="border-gold/50 text-lg bg-gold/10 text-gold">
+            <Button className="bg-gold text-lg text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button>
+            <a href="#services"><Button variant="outline" className="border-gold/50 text-lg bg-gold/10 text-gold">
               Conheça Nossos Serviços
-            </Button>
+            </Button></a>
           </div>
         </motion.div>
       </div>

@@ -2,6 +2,8 @@
 
 import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function CtaSection() {
   const benefits = [
@@ -33,7 +35,7 @@ export default function CtaSection() {
               </li>
             ))}
           </ul>
-          <Button className="mt-8 bg-gold text-lg text-black hover:bg-gold/80">Agendar Consulta</Button>
+          <Button className="mt-8 bg-gold text-lg text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button>
         </div>
       </div>
     </section>
