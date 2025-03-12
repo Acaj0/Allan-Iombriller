@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { MapPin, Phone, Clock } from "lucide-react"
+import { MapPin, Phone, Clock, Share2 } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,14 +11,6 @@ export default function Footer() {
     { name: "Sobre", href: "#about" },
     { name: "Depoimentos", href: "#testimonials" },
     { name: "Contato", href: "#contact" },
-  ]
-
-  const services = [
-    { name: "Implantes Dentários", href: "#services" },
-    { name: "Estética Dental", href: "#services" },
-    { name: "Harmonização Facial", href: "#services" },
-    { name: "Ortodontia Invisível", href: "#services" },
-    { name: "Reabilitação Oral", href: "#services" },
   ]
 
   const contactInfo = [
@@ -68,8 +60,8 @@ export default function Footer() {
   return (
     <footer className="border-t border-gold/20 bg-black py-12">
       <div className="container px-4">
-        <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4">
-          <div>
+        <div className="grid gap-8 md:grid-cols-12">
+          <div className="md:col-span-6 lg:col-span-7">
             <Link className="flex items-center space-x-2" href="/">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp_Image_2025-02-24_at_22.23.48_433d7aba-removebg-preview-EhbeTs9I1wT6EzcEEBIO1fojxPCxT4.png"
@@ -78,16 +70,23 @@ export default function Footer() {
                 height={40}
                 className="h-10 w-auto"
               />
-              <span className=" text-xl font-bold text-white">Dr. Allan Iombriller</span>
+              <span className="text-xl font-bold text-white">Dr. Allan Iombriller</span>
             </Link>
             <p className="mt-4 text-sm text-gray-400">
               Transformando sorrisos e vidas com excelência e tecnologia de ponta.
             </p>
+            <Link
+              href="/share"
+              className="mt-4 inline-flex items-center space-x-2 rounded-md bg-gold/10 px-4 py-2 text-sm font-medium text-gold transition-colors hover:bg-gold/20"
+            >
+              <Share2 className="h-4 w-4" />
+              <span>Compartilhar</span>
+            </Link>
           </div>
 
-          <div>
-            <h3 className="mb-4 font-serif text-lg font-bold">Links Rápidos</h3>
-            <ul className="space-y-2 text-sm">
+          <div className="md:col-span-3 lg:col-span-2 md:text-right">
+            <h3 className="mb-4 font-serif text-lg font-bold md:text-right">Links Rápidos</h3>
+            <ul className="space-y-2 text-sm md:text-right">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link className="text-gray-400 hover:text-gold" href={link.href}>
@@ -98,30 +97,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="mb-4 font-serif text-lg font-bold">Serviços</h3>
-            <ul className="space-y-2 text-sm">
-              {services.map((service, index) => (
-                <li key={index}>
-                  <Link className="text-gray-400 hover:text-gold" href={service.href}>
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-serif text-lg font-bold">Contato</h3>
-            <ul className="space-y-2 text-sm">
+          <div className="md:col-span-3 lg:col-span-3 md:text-right">
+            <h3 className="mb-4 font-serif text-lg font-bold md:text-right">Contato</h3>
+            <ul className="space-y-2 text-sm md:text-right">
               {contactInfo.map((info, index) => (
-                <li key={index} className="flex items-center space-x-2">
+                <li key={index} className="flex md:justify-end items-center space-x-2">
                   {info.icon}
                   <span className="text-gray-400">{info.text}</span>
                 </li>
               ))}
             </ul>
-            <div className="mt-4 flex space-x-4">
+            <div className="mt-4 flex space-x-4 md:justify-end">
               {socialLinks.map((social, index) => (
                 <Link key={index} href={social.href} className="rounded-full bg-gold/10 p-2 text-gold hover:bg-gold/20">
                   {social.icon}
