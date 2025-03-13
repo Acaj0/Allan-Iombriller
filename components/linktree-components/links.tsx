@@ -9,7 +9,7 @@ export default function Links() {
     <CardContent className="grid gap-4">
       <Link
         className="w-full"
-        href="https://wa.me/5565992476890"
+        href="https://wa.me/5565992476890?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta."
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -36,7 +36,7 @@ export default function Links() {
           Como Chegar
         </Button>
       </Link>
-      <Link
+      {/* <Link
         className="w-full"
         href="tel:+5511999999999"
         target="_blank"
@@ -50,7 +50,7 @@ export default function Links() {
           <Phone className="mr-2 h-5 w-5" />
           Ligar Agora
         </Button>
-      </Link>
+      </Link> */}
       <Link className="w-full" href="/">
         <Button
           variant="outline"

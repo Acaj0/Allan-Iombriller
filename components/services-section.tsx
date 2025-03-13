@@ -7,28 +7,28 @@ export default function ServicesSection() {
     {
       title: "Implantes Dentários",
       description:
-        "Recupere sua função mastigatória e estética com implantes de titânio de alta qualidade e tecnologia avançada.",
+        "Solução definitiva para repor dentes perdidos, proporcionando estética e funcionalidade.",
     },
     {
       title: "Estética Dental",
       description: "Transforme seu sorriso com facetas, lentes de contato dental e clareamento de última geração.",
     },
     {
-      title: "Harmonização Facial",
-      description: "Procedimentos minimamente invasivos para realçar sua beleza natural e rejuvenescer sua aparência.",
-    },
-    {
-      title: "Ortodontia Invisível",
-      description: "Alinhe seus dentes discretamente com alinhadores transparentes personalizados para seu caso.",
-    },
-    {
       title: "Reabilitação Oral",
       description: "Restaure a função e estética de sua boca com tratamentos completos e personalizados.",
     },
     {
+      title: "Restaurações e Extrações Dentárias",
+      description: "Recuperação de dentes danificados e remoção segura quando necessário, priorizando o conforto.",
+    },
+
+    {
+      title: "Planejamento Estético e Funcional",
+      description: "Planejamento personalizado de tratamentos que equilibram estética e funcionalidade, para proporcionar um sorriso harmonioso e saudável.",
+    },
+    {
       title: "Odontologia Digital",
-      description:
-        "Planejamento e execução de tratamentos com tecnologia digital para resultados precisos e previsíveis.",
+      description: "Tecnologia de ponta aplicada ao planejamento e execução de tratamentos, garantindo mais precisão, conforto e rapidez nos procedimentos odontológicos.",
     },
   ]
 

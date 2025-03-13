@@ -42,7 +42,7 @@ export default function HeroSection() {
             tecnologia de ponta para resultados excepcionais.
           </p>
           <div className="flex flex-col justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-            <Button className="bg-gold text-lg text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button>
+            <a href="https://wa.me/5565992476890?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer"><Button className="bg-gold text-lg text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button></a>
             <a href="#services"><Button variant="outline" className="border-gold/50 text-lg bg-gold/10 text-gold">
               Conheça Nossos Serviços
             </Button></a>

@@ -4,28 +4,29 @@ import { motion } from "framer-motion"
 import { MapPin, Phone, Clock, Calendar } from 'lucide-react'
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function ContactSection() {
   const contactInfo = [
     {
       icon: <MapPin className="h-6 w-6 text-gold" />,
       title: "Localização",
-      details: ["Av. Paulista, 1000, Conjunto 101", "Bela Vista, São Paulo - SP"]
+      details: ["Av. Rui Barbosa, 1044, Galeria JL, 2º andar, Sala 9", "Jardim Universitário, Cuiabá - MT"]
     },
     {
       icon: <Phone className="h-6 w-6 text-gold" />,
       title: "Telefone",
-      details: ["(11) 99999-9999", "(11) 3333-3333"]
+      details: ["(65) 99247-6890"]
     },
     {
       icon: <Clock className="h-6 w-6 text-gold" />,
       title: "Horário de Atendimento",
-      details: ["Segunda a Sexta: 9h às 19h", "Sábado: 9h às 14h"]
+      details: ["Segunda a Sexta: 8h às 12h e 14h às 17h"]
     },
     {
       icon: <Calendar className="h-6 w-6 text-gold" />,
       title: "Agendamento Online",
-      details: ["Agende sua consulta pelo site ou WhatsApp", "Respondemos em até 2 horas"]
+      details: ["Agende sua consulta pelo WhatsApp", <a href="https://wa.me/5565992476890?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer"><Button className="mt-4 bg-gold text-lg text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button></a>]
     }
   ]
 
@@ -68,13 +69,14 @@ export default function ContactSection() {
             </div>
 
             <div className="mt-12 h-64 w-full overflow-hidden rounded-lg">
-              <Image
+              {/* <Image
                 src="/placeholder.svg?height=400&width=600"
                 alt="Mapa da localização"
                 width={600}
                 height={400}
                 className="h-full w-full object-cover"
-              />
+              /> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.5843864553417!2d-56.0386047!3d-15.613839099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939daf221eaad9e7%3A0xe7ca0d79f909703b!2sCENTRO%20CL%C3%8DNICO%20AIR!5e0!3m2!1spt-BR!2sbr!4v1741889630836!5m2!1spt-BR!2sbr" width="600" height="450" loading="lazy"></iframe>
             </div>
           </motion.div>
 
