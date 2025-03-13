@@ -52,18 +52,18 @@ export default function Header() {
                 Sobre
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className="text-sm hover:text-gold" href="#testimonials">
                 Depoimentos
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link className="text-sm hover:text-gold" href="#contact">
                 Contato
               </Link>
             </li>
             <li>
-              <Button className="bg-gold text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button>
+              <a href="https://wa.me/5565992476890?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer"><Button className="bg-gold text-black hover:bg-gold/80"><FaWhatsapp/>Agendar Consulta</Button></a>
             </li>
           </ul>
         </nav>

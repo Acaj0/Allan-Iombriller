@@ -9,20 +9,20 @@ export default function Footer() {
     { name: "Início", href: "#home" },
     { name: "Serviços", href: "#services" },
     { name: "Sobre", href: "#about" },
-    { name: "Depoimentos", href: "#testimonials" },
+    // { name: "Depoimentos", href: "#testimonials" },
     { name: "Contato", href: "#contact" },
   ]
 
   const contactInfo = [
-    { icon: <MapPin className="h-4 w-4 text-gold" />, text: "Av. Paulista, 1000, São Paulo - SP" },
-    { icon: <Phone className="h-4 w-4 text-gold" />, text: "(11) 99999-9999" },
-    { icon: <Clock className="h-4 w-4 text-gold" />, text: "Seg-Sex: 9h-19h | Sáb: 9h-14h" },
+    { icon: <MapPin className="h-4 w-4 text-gold" />, text: "Av. Rui Barbosa, 1044, Cuiabá - MT" },
+    { icon: <Phone className="h-4 w-4 text-gold" />, text: "(65) 99247-6890" },
+    { icon: <Clock className="h-4 w-4 text-gold" />, text: "Seg-Sex: 8h às 12h e 14h às 17h" },
   ]
 
   const socialLinks = [
     {
       name: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/drallaniombriller/",
       icon: (
         <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -35,7 +35,7 @@ export default function Footer() {
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/allaniombriller/",
       icon: (
         <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -46,15 +46,15 @@ export default function Footer() {
         </svg>
       ),
     },
-    {
-      name: "Twitter",
-      href: "#",
-      icon: (
-        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-        </svg>
-      ),
-    },
+    // {
+    //   name: "Twitter",
+    //   href: "#",
+    //   icon: (
+    //     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    //       <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+    //     </svg>
+    //   ),
+    // },
   ]
 
   return (
@@ -109,7 +109,7 @@ export default function Footer() {
             </ul>
             <div className="mt-4 flex space-x-4 md:justify-end">
               {socialLinks.map((social, index) => (
-                <Link key={index} href={social.href} className="rounded-full bg-gold/10 p-2 text-gold hover:bg-gold/20">
+                <Link key={index} href={social.href} target="_blank" className="rounded-full bg-gold/10 p-2 text-gold hover:bg-gold/20">
                   {social.icon}
                 </Link>
               ))}
